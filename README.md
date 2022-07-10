@@ -1,6 +1,10 @@
 # gitleryhub
 
-GitHub gallery like viewer
+GitHub repository gallery like viewer
+
+# Demo
+
+[Try Me](https://gitleryhub.haizim.one/)
 
 ## Recommended IDE Setup
 
