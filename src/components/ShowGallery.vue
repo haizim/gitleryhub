@@ -15,6 +15,7 @@
         <gallery-folder
           :contents="folders"
           v-on:submit="setPath"
+          :path="path"
         ></gallery-folder>
       </div>
       <div class="d-flex mb-3">
