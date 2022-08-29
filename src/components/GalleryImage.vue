@@ -4,7 +4,7 @@
       <div class="card" style="width: 100%; border-radius: .75em;">
         <a v-on:click="show(content.url, content.name)">
           <v-lazy-img
-            :src="'https://thumbnailer.haizim.one/?u=' + content.url"
+            :src="'https://hzm-thumbnailer.herokuapp.com/?u=' + content.url"
             class="gallery-img lazy"
             load="lazy"
             :alt="content.name"

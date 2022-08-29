@@ -32,7 +32,7 @@
 
 export default {
   props: {
-    value: {
+    modelValue: {
       default: "",
     },
   },
@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      url: this.value,
+      url: this.modelValue,
     };
   },
 
@@ -50,6 +50,13 @@ export default {
       console.log('update : ', this.url)
       // this.$refs["backdrop-modal"].open();
       this.$emit("submit", this.url);
+    },
+  },
+
+  watch: {
+    modelValue: function(val) {
+      console.log("watch value repoaddress", val);
+      this.url = val;
     },
   },
 };
